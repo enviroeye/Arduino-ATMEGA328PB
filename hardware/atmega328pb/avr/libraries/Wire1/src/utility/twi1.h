@@ -47,6 +47,7 @@
   void twi_reply1(uint8_t);
   void twi_stop1(void);
   void twi_releaseBus1(void);
+  uint8_t twi_tout1(uint8_t);
 
 #endif
 

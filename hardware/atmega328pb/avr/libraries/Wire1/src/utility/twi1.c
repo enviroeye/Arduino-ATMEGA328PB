@@ -58,6 +58,18 @@ static volatile uint8_t twi_rxBufferIndex;
 
 static volatile uint8_t twi_error;
 
+static volatile uint32_t twi_toutc;
+uint8_t twi_tout1(uint8_t ini)
+{
+	if (ini) twi_toutc=0; else twi_toutc++;	
+	if (twi_toutc>=100000UL) {
+		twi_toutc=0;
+		twi_init();
+		return 1;
+	}
+  return 0;  
+}
+
 /* 
  * Function twi_init
  * Desc     readys twi pins and sets twi bitrate
@@ -137,7 +149,9 @@ uint8_t twi_readFrom1(uint8_t address, uint8_t* data, uint8_t length, uint8_t se
   }
 
   // wait until twi is ready, become master receiver
+  twi_tout1(1);//Ini TimeOut
   while(TWI_READY != twi_state){
+	if (twi_tout1(0)) break;
     continue;
   }
   twi_state = TWI_MRX;
@@ -176,7 +190,9 @@ uint8_t twi_readFrom1(uint8_t address, uint8_t* data, uint8_t length, uint8_t se
     TWCR1 = _BV(TWEN) | _BV(TWIE) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);
 
   // wait for read operation to complete
+  twi_tout1(1);//Ini TimeOut
   while(TWI_MRX == twi_state){
+	if (twi_tout1(0)) break; 
     continue;
   }
 
@@ -216,7 +232,9 @@ uint8_t twi_writeTo1(uint8_t address, uint8_t* data, uint8_t length, uint8_t wai
   }
 
   // wait until twi is ready, become master transmitter
+  twi_tout1(1);//Ini TimeOut
   while(TWI_READY != twi_state){
+	if (twi_tout1(0)) break;
     continue;
   }
   twi_state = TWI_MTX;
@@ -258,7 +276,9 @@ uint8_t twi_writeTo1(uint8_t address, uint8_t* data, uint8_t length, uint8_t wai
     TWCR1 = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE) | _BV(TWSTA);	// enable INTs
 
   // wait for write operation to complete
+  twi_tout1(1);//Ini TimeOut
   while(wait && (TWI_MTX == twi_state)){
+	twi_tout1(1);//Ini TimeOut
     continue;
   }
   
@@ -356,7 +376,9 @@ void twi_stop1(void)
 
   // wait for stop condition to be exectued on bus
   // TWINT is not set after a stop condition!
+  twi_tout1(1);//Ini TimeOut
   while(TWCR1 & _BV(TWSTO)){
+	twi_tout1(1);//Ini TimeOut
     continue;
   }
 
