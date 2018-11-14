@@ -17,4 +17,5 @@ To compile just select ATmega328PB Internal Clock as the board to build against 
 ## Change Log
 
 1.1.3 - Initial release based off 1.1.3 of the https://github.com/watterott/ATmega328PB-Testing libraries.
+
 1.1.4 - Included I2C timeout code for Wire1 to prevent bus lockups.
