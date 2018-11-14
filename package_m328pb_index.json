@@ -24,11 +24,11 @@
 		{
           "name": "enviroeye ATmega328PB",
           "architecture": "avr",
-          "version": "1.1.3a",
+          "version": "1.1.4",
           "category": "contributed",
           "help": {"online": "https://github.com/enviroeye/Arduino-ATMEGA328PB"},
-          "url": "https://github.com/enviroeye/Arduino-ATMEGA328PB/raw/master/m328pb-1.1.3a.zip",
-          "archiveFileName": "m328pb-1.1.3a.zip",
+          "url": "https://github.com/enviroeye/Arduino-ATMEGA328PB/raw/master/m328pb-1.1.4.zip",
+          "archiveFileName": "m328pb-1.1.4.zip",
           "size": "84531",
           "boards": [
             {"name": "ATmega328PB"}
