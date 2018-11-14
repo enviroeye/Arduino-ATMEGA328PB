@@ -64,7 +64,7 @@ uint8_t twi_tout1(uint8_t ini)
 	if (ini) twi_toutc=0; else twi_toutc++;	
 	if (twi_toutc>=100000UL) {
 		twi_toutc=0;
-		twi_init();
+		twi_init1();
 		return 1;
 	}
   return 0;  
