@@ -1,0 +1,315 @@
+{
+  "packages": [
+    {
+      "name": "m328pb",
+      "maintainer": "Watterott electronic",
+      "websiteURL": "https://github.com/watterott/ATmega328PB-Testing",
+      "email": "",
+      "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+
+      "platforms": [
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.1.3",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/master/m328pb.zip",
+          "archiveFileName": "m328pb-1.1.3.zip",
+          "size": "84531",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ]
+        },
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.1.2",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/12b422f551b8cdf0b998ee1a6a648df8320c8f6e/m328pb.zip",
+          "archiveFileName": "m328pb-1.1.2.zip",
+          "size": "84842",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ]
+        },
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.1.1",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/3354860a5ff5f1c920b957cee8d1cd9d08e75bc7/m328pb.zip",
+          "archiveFileName": "m328pb-1.1.1.zip",
+          "size": "85206",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ]
+        },
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.1.0",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/88ea09054b3260f3b4ff855cadd84df39e65ef85/m328pb.zip",
+          "archiveFileName": "m328pb-1.1.0.zip",
+          "size": "85215",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ]
+        },
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.0.9",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/3398f67e81a0710cd61016fe135a485266dbd787/m328pb.zip",
+          "archiveFileName": "m328pb-1.0.9.zip",
+          "size": "85278",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ]
+        },
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.0.8",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/4ce95b1711efa12aa6a874421739cf5be08cf6bb/m328pb.zip",
+          "archiveFileName": "m328pb-1.0.8.zip",
+          "size": "85517",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ]
+        },
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.0.7",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/db85f07b07a3d807c6b0d765819b18492a1b0bd3/m328pb.zip",
+          "archiveFileName": "m328pb-1.0.7.zip",
+          "size": "85517",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ]
+        },
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.0.6",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/ee59a8487cbc1efd69e08f4c005594f7042cb342/m328pb.zip",
+          "archiveFileName": "m328pb-1.0.6.zip",
+          "size": "85517",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino2"
+            }
+          ]
+        },
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.0.5",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/d90f0697c5a24553a96ad41cb2605edba7057a75/m328pb.zip",
+          "archiveFileName": "m328pb-1.0.5.zip",
+          "size": "85567",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino2"
+            }
+          ]
+        },
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.0.4",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/8fc3888eaa5c0dc8e715ac47b3a9d33f7657dda6/m328pb.zip",
+          "archiveFileName": "m328pb-1.0.4.zip",
+          "size": "84449",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino2"
+            }
+          ]
+        },
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.0.3",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/49211563cb515c8924eb91fa7e393652062da989/m328pb.zip",
+          "archiveFileName": "m328pb-1.0.3.zip",
+          "size": "53995",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ]
+        },
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.0.2",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/610a28ee8b438d05bab3f2e71b701fa6958fb4c3/m328pb.zip",
+          "archiveFileName": "m328pb-1.0.2.zip",
+          "size": "53826",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "m328pb",
+              "name": "avr-gcc",
+              "version": "4.9.2c"
+            },
+            {
+              "packager": "m328pb",
+              "name": "avrdude",
+              "version": "6.3.0"
+            }
+          ]
+        },
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.0.1",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/610a28ee8b438d05bab3f2e71b701fa6958fb4c3/m328pb.zip",
+          "archiveFileName": "m328pb-1.0.1.zip",
+          "size": "53826",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "m328pb",
+              "name": "avr-gcc",
+              "version": "4.9.2b"
+            },
+            {
+              "packager": "m328pb",
+              "name": "avrdude",
+              "version": "6.3.0"
+            }
+          ]
+        },
+        {
+          "name": "ATmega328PB Boards",
+          "architecture": "avr",
+          "version": "1.0.0",
+          "category": "contributed",
+          "help": {"online": "https://github.com/watterott/ATmega328PB-Testing"},
+          "url": "https://github.com/watterott/ATmega328PB-Testing/raw/610a28ee8b438d05bab3f2e71b701fa6958fb4c3/m328pb.zip",
+          "archiveFileName": "m328pb-1.0.0.zip",
+          "size": "53826",
+          "boards": [
+            {"name": "ATmega328PB"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "m328pb",
+              "name": "avr-gcc",
+              "version": "4.9.2"
+            },
+            {
+              "packager": "m328pb",
+              "name": "avrdude",
+              "version": "6.3.0"
+            }
+          ]
+        }
+      ],
+
+      "tools": [
+        {
+          "name":"avr-gcc",
+          "version":"4.9.2c",
+          "systems": [
+            {
+                "host":"i686-mingw32",
+                "url":"https://github.com/watterott/ATmega328PB-Testing/raw/0157dbf8333d512e75a71a3e7a9c3cb02915b371/avr-gcc-4.9.2-win32.zip",
+                "archiveFileName":"avr-gcc-4.9.2c-win32.zip",
+                "checksum":"MD5:e4786528c0a4cb009eb441da07d82ced",
+                "size":"43832130"
+            }
+          ]
+        },
+        {
+          "name":"avr-gcc",
+          "version":"4.9.2b",
+          "systems": [
+            {
+                "host":"i686-mingw32",
+                "url":"https://github.com/watterott/ATmega328PB-Testing/raw/d37d112a5661098fbf14e7c2faca3c9c9fcf3b7f/avr-gcc-4.9.2-win32.zip",
+                "archiveFileName":"avr-gcc-4.9.2b-win32.zip",
+                "checksum":"MD5:4dd147d70307775b705636ffa66f8a4b",
+                "size":"43772922"
+            }
+          ]
+        },
+        {
+          "name":"avr-gcc",
+          "version":"4.9.2",
+          "systems": [
+            {
+                "host":"i686-mingw32",
+                "url":"https://github.com/watterott/ATmega328PB-Testing/raw/3d10e8ce26fc1753a7e115136163c1bd36d258ee/avr-gcc-4.9.2-win32.zip",
+                "archiveFileName":"avr-gcc-4.9.2-win32.zip",
+                "checksum":"MD5:3a775c1114e1802831f3a2ad59a7bb69",
+                "size":"41504987"
+            },
+            {
+                "host":"x86_64-linux-gnu",
+                "url":"https://github.com/watterott/ATmega328PB-Testing/raw/7cd41a631b90e374868bd139bf4a7c77fcbbffc5/avr-gcc-4.9.2-linux_64.tar.bz2",
+                "archiveFileName":"avr-gcc-4.9.2-linux_64.tar.bz2",
+                "checksum":"MD5:07cacdecda66b82f8addf5bbd8a6e210",
+                "size":"25084308"
+            }
+          ]
+        },
+        {
+          "name":"avrdude",
+          "version":"6.3.0",
+          "systems": [
+            {
+                "host":"i686-mingw32",
+                "url":"https://github.com/watterott/ATmega328PB-Testing/raw/610a28ee8b438d05bab3f2e71b701fa6958fb4c3/avrdude-6.3.0-win32.zip",
+                "archiveFileName":"avrdude-6.3.0-win32.zip",
+                "checksum":"MD5:ec665463025eaafb940e0a3e9ef1fee5",
+                "size":"220965"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
