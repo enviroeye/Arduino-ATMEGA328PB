@@ -180,8 +180,10 @@ uint8_t twi_readFrom1(uint8_t address, uint8_t* data, uint8_t length, uint8_t se
     // up. Also, don't enable the START interrupt. There may be one pending from the 
     // repeated start that we sent ourselves, and that would really confuse things.
     twi_inRepStart = false;			// remember, we're dealing with an ASYNC ISR
+	twi_tout1(1);//Ini TimeOut
     do {
       TWDR1 = twi_slarw;
+	  if (twi_tout1(0)) break;
     } while(TWCR1 & _BV(TWWC));
     TWCR1 = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE);	// enable INTs, but not START
   }
