@@ -268,7 +268,9 @@ uint8_t twi_writeTo1(uint8_t address, uint8_t* data, uint8_t length, uint8_t wai
     // up. Also, don't enable the START interrupt. There may be one pending from the 
     // repeated start that we sent outselves, and that would really confuse things.
     twi_inRepStart = false;			// remember, we're dealing with an ASYNC ISR
+	twi_tout1(1);//Ini TimeOut
     do {
+	  if (twi_tout1(0)) break;
       TWDR1 = twi_slarw;				
     } while(TWCR1 & _BV(TWWC));
     TWCR1 = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE);	// enable INTs, but not START
@@ -280,7 +282,7 @@ uint8_t twi_writeTo1(uint8_t address, uint8_t* data, uint8_t length, uint8_t wai
   // wait for write operation to complete
   twi_tout1(1);//Ini TimeOut
   while(wait && (TWI_MTX == twi_state)){
-	twi_tout1(1);//Ini TimeOut
+	if (twi_tout1(0)) break;
     continue;
   }
   
